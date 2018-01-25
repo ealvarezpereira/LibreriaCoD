@@ -5,6 +5,8 @@
  */
 package com.dialogos.quique;
 
+import javax.swing.JOptionPane;
+
 
 
 /**
@@ -13,6 +15,11 @@ package com.dialogos.quique;
  */
 public class Dialogos {
 
+     public static void recibirMensaje(String recibirMensaje) {
+        JOptionPane.showMessageDialog(null, recibirMensaje);
+    }
+
+    
    
 
 }
