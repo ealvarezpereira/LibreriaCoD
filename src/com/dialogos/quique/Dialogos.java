@@ -28,4 +28,19 @@ public class Dialogos {
         }
     }
    
+        public static Object meterDato(String label) {
+
+        Object converted = null;
+        Object obj = JOptionPane.showInputDialog(label);
+
+        if (obj == null ) {         
+            converted = (int) obj;
+        } else if (obj == obj.toString()) {
+            converted = String.valueOf(obj);
+        } else if (obj == double.class){
+            converted = (double) obj;
+        }
+
+        return converted;
+    }
 }
