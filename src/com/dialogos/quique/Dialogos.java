@@ -15,18 +15,40 @@ import javax.swing.JOptionPane;
  */
 public class Dialogos {
 
+    /**
+     * 
+     * 
+     * @param recibirMensaje es un metodo para recibir un mensaje por teclado
+     */
+    
+    /**
+     *  @param dialogButton es una variable para el cuadro de dialogo de SI/NO
+     */
+    private static int dialogButton;
+    
      public static void recibirMensaje(String recibirMensaje) {
         JOptionPane.showMessageDialog(null, recibirMensaje);
     }
-
+     /**
+      * 
+      * @param pregunta es la pregunta que aparece en el cuadro de texto
+      * @param cabecera El texto que le pones a la cabecera del cuadro de texto
+      * @return retorna un true o un false segun la condicion del if
+      */
     public static boolean sioNO(String pregunta, String cabecera) {
-        int dialogButton = JOptionPane.showConfirmDialog(null, pregunta, cabecera, JOptionPane.YES_NO_OPTION);
+         dialogButton = JOptionPane.showConfirmDialog(null, pregunta, cabecera, JOptionPane.YES_NO_OPTION);
         if (dialogButton == JOptionPane.YES_OPTION) {
             return true;
         } else {
             return false;
         }
     }
+    
+    /**
+     * 
+     * @param label es una variable para definir el texto que quieres que te convierta
+     * @return retorna null
+     */
    
         public static Object meterDato(String label) {
 
